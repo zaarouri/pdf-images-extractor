@@ -1,0 +1,56 @@
+2025-08-08 21:28:16,510 - pdf_extractor - ERROR - Error processing uploaded file: `st.session_state.quick_download_selected` cannot be modified after the widget with key `quick_download_selected` is instantiated.
+2025-08-08 21:28:16,516 - pdf_extractor - ERROR - Traceback (most recent call last):
+  File "/Users/mac/Desktop/pdf_image_extractor/app.py", line 94, in process_uploaded_file
+    render_extraction_results(image_paths, stats)
+  File "/Users/mac/Desktop/pdf_image_extractor/ui_components.py", line 230, in render_extraction_results
+    render_image_selection_gallery(image_paths)
+  File "/Users/mac/Desktop/pdf_image_extractor/ui_components.py", line 286, in render_image_selection_gallery
+    st.session_state.quick_download_selected = True
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 133, in __setattr__
+    self[key] = value
+    ~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 111, in __setitem__
+    get_session_state()[key] = value
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 99, in __setitem__
+    self._state[key] = value
+    ~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 472, in __setitem__
+    raise StreamlitAPIException(
+streamlit.errors.StreamlitAPIException: `st.session_state.quick_download_selected` cannot be modified after the widget with key `quick_download_selected` is instantiated.
+
+2025-08-08 21:28:25,100 - pdf_extractor - ERROR - Error processing uploaded file: `st.session_state.quick_download_selected` cannot be modified after the widget with key `quick_download_selected` is instantiated.
+2025-08-08 21:28:25,101 - pdf_extractor - ERROR - Traceback (most recent call last):
+  File "/Users/mac/Desktop/pdf_image_extractor/app.py", line 94, in process_uploaded_file
+    render_extraction_results(image_paths, stats)
+  File "/Users/mac/Desktop/pdf_image_extractor/ui_components.py", line 230, in render_extraction_results
+    render_image_selection_gallery(image_paths)
+  File "/Users/mac/Desktop/pdf_image_extractor/ui_components.py", line 286, in render_image_selection_gallery
+    st.session_state.quick_download_selected = True
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 133, in __setattr__
+    self[key] = value
+    ~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 111, in __setitem__
+    get_session_state()[key] = value
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 99, in __setitem__
+    self._state[key] = value
+    ~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 472, in __setitem__
+    raise StreamlitAPIException(
+streamlit.errors.StreamlitAPIException: `st.session_state.quick_download_selected` cannot be modified after the widget with key `quick_download_selected` is instantiated.
+
