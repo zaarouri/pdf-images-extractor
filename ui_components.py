@@ -295,7 +295,7 @@ def render_image_selection_gallery(image_paths: List[str]):
             # Create a container for each image
             with st.container():
                 # Image display
-                st.image(image_path, use_column_width=True, caption=f"Image {i+1}")
+                st.image(image_path, use_container_width=True, caption=f"Image {i+1}")
                 
                 # Selection checkbox
                 is_selected = i in st.session_state.selected_images
